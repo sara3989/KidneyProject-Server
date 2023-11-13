@@ -44,10 +44,11 @@ class AuthenticationController {
     }
 
     register = async (req, res) => {
+        console.log("hereeeeeee");
         const { userName, email, password, role } = req.body;
         console.log(req.body.email)
         // ValidationError()
-console.log(userName,"userNameuserName");
+console.log(req.body.userName,"userNameuserName");
         console.log(`${userName}/n/n/n/n`);
         console.log(`${password}/n/n/n/n`);
 
